@@ -2,7 +2,7 @@ from langchain_core.runnables import Runnable
 import numpy as np
 import faiss
 from pathlib import Path
-from __004__langgraph_agent.agent_state import AgentState
+from agent_state import AgentState
 from common.embedding_model import embedding_model
 from common.config import Config
 
