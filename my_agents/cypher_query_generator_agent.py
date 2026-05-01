@@ -2,7 +2,7 @@ from langchain_core.runnables import Runnable
 from langchain_core.messages import SystemMessage, HumanMessage
 import json
 import os
-from __004__langgraph_agent.agent_state import AgentState
+from agent_state import AgentState
 from common.llm import my_llm
 from common.neo4j_client import neo4j_client
 from common.config import Config
