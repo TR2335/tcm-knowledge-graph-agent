@@ -9,7 +9,7 @@ os.chdir(_project_root)
 from fastapi import FastAPI
 from pydantic import BaseModel
 from typing import Dict, Any
-from __004__langgraph_agent.__004__langgraph_more_agent import call_langgraph_ai
+from langgraph_workflow import call_langgraph_ai
 
 app = FastAPI(title="中医知识图谱项目", version="1.0.0")
 
