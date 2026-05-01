@@ -1,11 +1,14 @@
 import os
 from dotenv import load_dotenv
-from tools.path_utils import resolve_from_project_root
+import sys
+from pathlib import Path
 
-load_dotenv(".env")
-load_dotenv(resolve_from_project_root(".env"))
+_project_root = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(_project_root))
 
-FAISS_INDEX_BASE = os.getenv("FAISS_INDEX_BASE", resolve_from_project_root("__004__langgraph_agent"))
+load_dotenv(_project_root / ".env")
+
+FAISS_INDEX_BASE = os.getenv("FAISS_INDEX_BASE", str(_project_root))
 
 
 class Config:
