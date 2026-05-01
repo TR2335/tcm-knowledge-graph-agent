@@ -8,7 +8,7 @@ os.chdir(_project_root)
 
 import streamlit as st
 import requests
-from __004__langgraph_agent.__004__langgraph_more_agent import call_langgraph_ai
+from langgraph_workflow import call_langgraph_ai
 
 st.set_page_config(page_title="中医知识图谱问答", page_icon=" 中医")
 st.title(" 中医知识图谱智能问答系统")
