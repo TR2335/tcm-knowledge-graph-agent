@@ -2,7 +2,7 @@ from langchain_core.runnables import Runnable
 import requests
 import uuid
 from pathlib import Path
-from __004__langgraph_agent.agent_state import AgentState
+from agent_state import AgentState
 from common.config import Config
 
 conf = Config()
